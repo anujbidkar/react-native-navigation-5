@@ -32,7 +32,7 @@ function Detailscreen({navigation}) {
       <Button 
       title="Navigate"
       onPress={
-        ()=> navigation.push("Home")
+        ()=> navigation.replace("Home")
       }
       />
       <Button 
@@ -57,6 +57,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={  {
+        headerShown:false,
         headerStyle:{
           backgroundColor:'#009387',
         },
